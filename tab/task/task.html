@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     .main_div{
+        width: 100%;
+        border: 2px solid red;
+height: 500px;
+    }
+    #myDIV{
+    position: relative;
+    width: 100%;
+    text-align: center;
+   
+
+}
+#myDIV img{
+    width: 50%;
+}
+.div{
+    position: absolute;
+    top: 20px;
+    left: 36%;
+    font-size: 70px;
+}
+
+
+/* .card {
+  need position to restrict .insta to sit inside this div 
+  position: relative ;
+  z-index: 1 ;
+ 
+}
+.card-img-top {
+  height: 300px;
+  z-index: 2 ;
+}
+.insta {
+
+  position:absolute  ;
+ top: 25px;
+ left: 25%;
+  z-index: 3 ;
+  transition: opacity 333ms linear;
+color: crimson;
+
+} */
+</style>
+
+</head>
+<body>
+    
+      
+<!-- <h1 class="hadding">kundan</h1>  -->
+
+
+ <div id="myDIV"><img  src="pexels-james-wheeler-414612.jpg" alt="" srcset=""></div>
+
+<div class="div" onmouseenter="myFunction()">
+kundan saroj
+</div>
+
+
+
+<!-- <div class="card floatleft" style="width: 25%" height="100%">
+
+    <div class="overlay pineapple canvas">
+    
+    <img id="imgdd" class="card-img-top image4 canvas" src="pexels-james-wheeler-414612.jpg" alt="Card image cap">
+   
+    
+</div> 
+<h1 class="insta">kundan saroj</h1>
+    
+    </div>  -->
+
+
+
+    
+
+<script>
+ function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+
+
+</script>
+
+</body>
+</html>

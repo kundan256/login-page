@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #image_1{
+            width: 50%;
+            
+        }
+        #image_2{
+            width: 50%;
+            
+        }
+        #image_1 img{
+            width: 50%;
+            height: 310px;
+        }
+        #image_2 img{
+            width: 50%;
+            height: 310px;
+        }
+    </style>
+</head>
+<body>
+    
+     <img id="image_1" src="pexels-pixabay-460621.jpg" alt="">
+ 
+   
+    <img id="image_2" src="" alt="">
+   
+    <button id="btn" onclick="num()">click</button>
+
+
+    <script>
+        function num(){
+            var a = document.getElementById("image_1").src;
+             document.getElementById("image_2").src= a;
+           }
+           
+    </script>
+</body>
+</html>

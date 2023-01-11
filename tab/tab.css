@@ -1,0 +1,19 @@
+.b-tab {
+    padding: 20px;
+    border: 1px solid #000;
+    display: none;
+    background-color: #ff4200;
+  }
+  
+  .b-tab.active {
+    display: block;
+  }
+  
+  .b-nav-tab {
+    display: inline-block;
+    padding: 20px;
+  }
+  
+  .b-nav-tab.active {
+    color: #ff4200;
+  }

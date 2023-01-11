@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <button class="btn" Id="one" >red</button>
+    <button class="btn" Id ="two" >green</button>
+    <button class="btn" Id = "Three" >blue</button>
+    <button class="btn" Id = "Four">yellow</button>
+    <button class="btn" Id = "Five"  >pink</button>
+
+    <div class="dabba"></div>
+    <script>
+
+//  function myFunction() {
+//   document.body.style.backgroundColor = "red";
+//  }
+// function myFun() {
+//   document.body.style.backgroundColor = "yellow";
+// }
+// function myDemo() {
+//   document.body.style.backgroundColor = "green";
+// }
+// function myDemo1() {
+//   document.body.style.backgroundColor = "blue";
+// }
+// function myDemo2() {
+//   document.body.style.backgroundColor = "red";
+// }
+
+
+ var divs  = document.querySelectorAll(".btn");
+ var divs1 = [...divs]
+ divs1.forEach((item)=>{
+    item.addEventListener('click', function(){
+      var txt  =   item.textContent;
+        document.querySelector(".dabba").style.backgroundColor=txt;
+    })
+ })
+
+    </script>
+
+   <style>
+    .dabba{
+        width: 400px;
+    height: 357px;
+    border: 2px solid black;
+    }
+   </style>
+</body>
+</html>

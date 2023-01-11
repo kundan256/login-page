@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+        }
+        .div{
+            width: 24%;
+            height: 95px;
+            background-color: blue;
+            border: 2px solid black;
+            display: inline-flex;
+        }
+        .btn{
+            width: 10%;
+    display: block;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="div1" class="div"></div>
+
+        <button class="btn" onclick="function1()">click</button>
+
+        <div id="div2" class="div" > </div>
+
+        <button class="btn" onclick="function2()">click</button>
+
+        <div id="div3" class="div"></div>
+
+        <button class="btn" onclick="function3()">click</button>
+
+        <div id="div4" class="div"></div>
+
+        <button class="btn" onclick="function4()">click</button>
+    
+<script>
+function function1(){
+    document.getElementById("div1").style.display ="none";
+    document.getElementById("div2").style.display ="block";
+    document.getElementById("div3").style.display ="block";
+    document.getElementById("div4").style.display ="block";
+}
+function function2(){
+    document.getElementById("div1").style.display ="block";
+    document.getElementById("div2").style.display ="none";
+    document.getElementById("div3").style.display ="block";
+    document.getElementById("div4").style.display ="block";
+}
+function function3(){
+    document.getElementById("div1").style.display ="block";
+    document.getElementById("div2").style.display ="block";
+    document.getElementById("div3").style.display ="none";
+    document.getElementById("div4").style.display ="block";
+}
+function function4(){
+    document.getElementById("div1").style.display ="block";
+    document.getElementById("div2").style.display ="block";
+    document.getElementById("div3").style.display ="block";
+    document.getElementById("div4").style.display ="none";
+}
+</script>
+</body>
+</html>
